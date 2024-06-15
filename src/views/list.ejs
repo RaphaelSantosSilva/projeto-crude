@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <%- include('partials/head.ejs')  %>
+</head>
+<body>
+    
+    <h1> <%= title %></h1>
+
+    <%-include('partials/navbar.ejs')  %>   
+
+    
+    <ul class="listUserss">
+        <% users.forEach((user) => { %>
+            <li>
+                <b>Nome do usuário: </b><%= user.name %>
+                <br>
+                <b>Email: </b><%= user.email %> 
+                <br>
+                <b>Idade: </b><%= user.age %>
+                <br>
+                <a class="buttonEdit" href="/edit?id=<%= user._id %>">[editar]</a> - 
+                <a class="buttonEdit" href="/remove/<%=  user._id %>">[remover]</a>
+            </li>
+
+        <%})%>
+    </ul>
+
+
+    <%- include('partials/foot.ejs')  %>
+</body>
+</html>

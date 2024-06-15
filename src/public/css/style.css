@@ -1,3 +1,98 @@
 body {
+    background-color: rgb(139, 0, 152);
+    color: white;
+    font-family: 'Verdana';
+    text-align: center;
+    font-size: 20px;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.formulario {
+    border: 4px solid yellow;
+    border-radius: 10px;
+    max-width: 800px;
+    padding: 50px;
+    margin: 30px 290px;
+}
+
+.formulario .inputTask {
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    font-size: 20px;
+}
+
+button {
+    padding: 20px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: all 200ms ease;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 450px;
+}
+
+button:hover {
+    cursor: pointer;
     background-color: black;
+    color: yellow;
+}
+
+ul li {
+    margin-top: 0;
+    list-style: none;
+    margin: 20px;
+}
+
+ul li a {
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: all 200ms ease;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 400px;
+}
+
+ul li a:hover {
+    cursor: pointer;
+    background-color: black;
+    color: yellow;
+}
+
+.navbar {
+    display: flex;
+    margin-top: -20px;
+    justify-content: center;
+}
+
+.listUserss {
+    display: flex;
+}
+
+.listUserss li .buttonEdit {
+    padding: 10px;
+    width: 300px;
 }
